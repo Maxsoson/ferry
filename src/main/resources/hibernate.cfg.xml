@@ -6,7 +6,7 @@
     <session-factory>
         <!-- Налаштування підключення до БД -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/ferry</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/ferry</property>
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">5432</property>
 
