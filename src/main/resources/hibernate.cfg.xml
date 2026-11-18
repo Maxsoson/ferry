@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+    "http://www.hibernate.org/dtd/hibernate-configuration">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- Налаштування підключення до БД -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/ferry</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">5432</property>
+
+        <!-- Діалект PostgreSQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!-- Виведення згенерованих SQL-запитів у консоль -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Перестворення структури таблиць при запуску (як у прикладі викладача) -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+        <!-- Поточний контекст сесії -->
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!-- Список Entity-класів -->
+        <mapping class="com.ferry.Ferry"/>
+        <mapping class="com.ferry.TicketCategory"/>
+        <mapping class="com.ferry.Flight"/>
+        <mapping class="com.ferry.TicketSale"/>
+    </session-factory>
+</hibernate-configuration>
