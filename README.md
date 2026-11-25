@@ -1,16 +1,3 @@
-# Приклад Java-програми ведення розкладу коледжу з використанням СКБД MongoDB
-
-## Кроки для виконання
-1. Завантажте і встановіть Java Development Kit 23 for Windows.
-1. Завантажте Maven з https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.zip і розпакуйте його на локальний комп'ютер.
-1. В Windows в параметрах системи додайте системну змінну MAVEN_HOME=<шлях до папки з Maven>
-1. В Windows в параметрах системи додайте `;<шлях до папки з Maven>\bin` в системну змінну PATH.
-1. Встановіть СКБД MongoDB Community Server вибрати варіант установки Complete -> "Run service as Network Service user"
-1. Встановіть MongoDB Compass (GUI).
-1. Створіть базу даних `college-db` і колекцію в ній `college-schedule`.
-1. Зберить програму використовуючи команду `mvn clean install`.
-1. Запустіть програму за допомогою команди `mvn exec:java -Dexec.mainClass="com.college.CollegeApplication"`.
-
 ## Результати виконання програми
 ```
 PS C:\Users\ironm\OneDrive\Документы\GitHub\ferry> mvn clean install
